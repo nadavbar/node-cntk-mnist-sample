@@ -5,17 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
 
-  <title>Node-CNTK MNIST Example</title>
+  <title>node-cntk MNIST sample</title>
 
   <script type="text/javascript" src="./lib/jquery.1.10.2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-  <div class="container" style=" width: '100%'">
-    <h1 style="text-align-last: center">Node-CNTK MNIST server</h1>
-    <p id="descriptionParagraph">This is a sample application of executing a CNTK trained model using a node server, without the need of installing CNTK
-      locally... UPDATE/CHANGE here later</p>
+  <a href="https://github.com/nadavbar/node-cntk-mnist-sample" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+  <div class="container" style=" width: '60%'">
+    <h1 style="text-align-last: center">Handwritten digit recognition with node.js and CNTK</h1>
+    <p id="descriptionParagraph">This sample node.js web application demonstrates how the <a href="https://github.com/nadavbar/node-cntk" target="_blank">node-cntk</a> module can be used to host <a href="https://www.microsoft.com/en-us/cognitive-toolkit" target="_blank">CNTK</a> models inside a node.js web-server.
+    <br/><br/>The hosted model in this web app consists of a Convolutional Neural Network that was trained on the <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">MNIST dataset</a>.
+    <br/><br/>For more information regarding the training procedure and the architecture of the model, please refer to the following <a href="https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb" target="_blank">CNTK tutorial</a>.
+    <br/><br/><b>How to use:</b> draw a digit in the left box and then click the "play" button to send the drawn digit to the server. The recognized digit will be then shown in the right box. Use the "erase" button to clear the current drawing.</p>
   </div>
   <!-- jQuery UI -->
   <script type="text/javascript" src="./lib/jquery.ui.core.1.10.3.min.js"></script>
