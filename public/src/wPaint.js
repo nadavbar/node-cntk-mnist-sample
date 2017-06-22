@@ -53,6 +53,10 @@
 
       // event functions
       function canvasMousedown(e) {
+        if (clearNextTime) {
+          clearAll();
+        }
+        clearNextTime = false;
         e.preventDefault();
         e.stopPropagation();
         _this.draw = true;

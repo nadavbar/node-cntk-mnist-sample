@@ -80,6 +80,8 @@
   <center id="wPaint-img"></center>
 
   <script type="text/javascript">
+    var clearNextTime = true;
+
     function convertBase64ToPixelsArray(base64DataUrl) {
       var mCanvas = (document.createElement('canvas'));
 
@@ -123,6 +125,8 @@
     }
 
     function analyzeImage() {
+      
+      clearNextTime = true;
       var imageData = $("#wPaint").wPaint("image");
 
       convertBase64ToPixelsArray(imageData);
