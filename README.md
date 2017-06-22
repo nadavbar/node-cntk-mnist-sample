@@ -4,7 +4,9 @@ This sample node.js web application demonstrates how the <a href="https://github
 
 The hosted model in this web app consists of a Convolutional Neural Network that was trained on the <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">MNIST dataset</a>.
 
-For more information regarding the training procedure and the architecture of the model, please refer to the following <a href="https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb" target="_blank">CNTK tutorial</a>. 
+For more information regarding the training procedure and the architecture of the model, please refer to the following <a href="https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb" target="_blank">CNTK tutorial</a>.
+
+![Handwritten digit recognition web app](imgs/mnist_sample.gif) 
 
 Currently, this example only runs on Windows x64.
 
