@@ -34,27 +34,48 @@
   <script type="text/javascript" src="./plugins/main/src/wPaint.menu.main.js"></script>
 
   <!-- wPaint file -->
-  <div id="wrapperDiv">
-    <div id="wPaint"></div>
-    <div id="result"></div>
-  </div>
+  <table style="width:100%">
+    <tr>
+      <td></td>
+      <td align="right" width="1%">
+        <div id="wPaint"></div>
+      </td>
+      <td width="1%">
+        <div id="result"></div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="center">
+        <div style="position: relative;">
+          <div id="buttons">
+            <div title="Recognize" onclick="analyzeImage();" style="cursor: pointer;display: inline-block ">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" style="vertical-align: middle">
+                <title>play3</title>
+                <path d="M6 4l20 12-20 12z"></path>
+              </svg>
+              <p style="display: inline;vertical-align: middle;margin:auto">Recognize</p>
+            </div>
+            <div title="Clear" onclick="clearAll();" style="cursor: pointer ;display: inline-block;margin-left: 10px;margin-right: 10px">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 28" style="vertical-align: middle">
+                <title>eraser</title>
+                <path d="M14 22l5.25-6h-12l-5.25 6h12zM29.828 5.172c0.313 0.719 0.187 1.547-0.328 2.141l-14 16c-0.375 0.438-0.922 0.688-1.5 0.688h-12c-0.781 0-1.5-0.453-1.828-1.172-0.313-0.719-0.187-1.547 0.328-2.141l14-16c0.375-0.438 0.922-0.688 1.5-0.688h12c0.781 0 1.5 0.453 1.828 1.172z"></path>
+              </svg>
+              <p style="display: inline;vertical-align: middle;margin:auto">Clear</p>
+            </div>
+
+          </div>
+
+        </div>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
   </center>
   <img id="img" src="" />
-  <div id="buttons">
-
-    <div type="button" title="Go!" onclick="analyzeImage();" style="position: relative;display: inline ; cursor: pointer ">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-        <title>play3</title>
-        <path d="M6 4l20 12-20 12z"></path>
-      </svg>
-    </div>
-    <div type="button" title="Clear" onclick="clearAll();" style="position: relative;display: inline ; cursor: pointer ">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 28">
-        <title>eraser</title>
-        <path d="M14 22l5.25-6h-12l-5.25 6h12zM29.828 5.172c0.313 0.719 0.187 1.547-0.328 2.141l-14 16c-0.375 0.438-0.922 0.688-1.5 0.688h-12c-0.781 0-1.5-0.453-1.828-1.172-0.313-0.719-0.187-1.547 0.328-2.141l14-16c0.375-0.438 0.922-0.688 1.5-0.688h12c0.781 0 1.5 0.453 1.828 1.172z"></path>
-      </svg>
-    </div>
-  </div>
 
   <center id="wPaint-img"></center>
 
