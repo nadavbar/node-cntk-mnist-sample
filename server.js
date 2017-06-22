@@ -12,11 +12,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-// POST http://localhost:8080/api/users
-// parameters sent with 
 app.post('/recognize', function(req, res) {
-    console.info('Got request, processing');
-    // TODO: convert from base64?
     // For now just get an array from the client..
     var dataInput = [req.body.payload];
     model.eval(dataInput, (err, evalResult) =>{
@@ -32,7 +28,7 @@ app.post('/recognize', function(req, res) {
             'digit' : digit
         });
 
-        console.info('Request processes, returning ')
+        console.info('Request processed, recognized digit is: ', digit)
 
         res.end(responseBody , 200);
     });
